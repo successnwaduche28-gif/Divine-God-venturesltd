@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Divine God Ventures Ltd | Visa & Flight Services</title>
+
+<meta name="description"
+content="Divine God Ventures Ltd - Visa assistance, travel consultation and flight booking services.">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gold: #d4a017;
+    --gold-light: #ffd85a;
+    --dark: #050505;
+    --dark-blue: #07152e;
+    --blue: #0b3d91;
+    --white: #ffffff;
+    --gray: #667085;
+    --light: #f5f7fa;
+    --green: #25D366;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: #172033;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(212, 160, 23, 0.35);
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+    padding: 12px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 72px;
+    height: 52px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--gold);
+}
+
+.logo-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.logo-text span {
+    color: var(--gold-light);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold-light);
+}
+
+.menu-btn {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.72),
+            rgba(0, 0, 0, 0.86)
+        ),
+        url("1000009886.jpg")
+        center center / cover no-repeat;
+
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+
+    padding: 70px 20px;
+
+    color: white;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 9px 17px;
+
+    border-radius: 30px;
+
+    background: rgba(212, 160, 23, 0.15);
+    border: 1px solid var(--gold);
+
+    color: var(--gold-light);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 78px);
+    line-height: 1.05;
+
+    max-width: 850px;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: var(--gold-light);
+}
+
+.hero p {
+    max-width: 700px;
+
+    color: #e8e8e8;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: var(--gold);
+    color: #111;
+}
+
+.btn-whatsapp {
+    background: var(--green);
+    color: white;
+}
+
+.btn-dark {
+    background: #111;
+    color: white;
+
+    border: 1px solid var(--gold);
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+section {
+    padding: 90px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title small {
+    color: var(--blue);
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+
+    margin: 10px 0;
+}
+
+.section-title p {
+    color: var(--gray);
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    background: white;
+}
+
+.service-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.service-card {
+    padding: 35px 28px;
+
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e6eaf0;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    border-color: var(--gold);
+}
+
+.service-icon {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: var(--gray);
+}
+
+/* =========================
+   COUNTRIES
+========================= */
+
+.countries {
+    background: #f1f5f9;
+}
+
+.country-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.country {
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-weight: 700;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s;
+}
+
+.country:hover {
+    border-color: var(--gold);
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.process {
+    text-align: center;
+
+    padding: 25px;
+}
+
+.number {
+    width: 55px;
+    height: 55px;
+
+    margin: auto auto 18px;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    background: var(--dark-blue);
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    border: 2px solid var(--gold);
+}
+
+.process h3 {
+    margin-bottom: 10px;
+}
+
+.process p {
+    color: var(--gray);
+}
+
+/* =========================
+   NOTICE
+========================= */
+
+.notice {
+    max-width: 900px;
+
+    margin: 30px auto 0;
+
+    padding: 18px;
+
+    border-left: 4px solid var(--gold);
+
+    background: #fff9e8;
+
+    color: #594600;
+
+    border-radius: 5px;
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.forms {
+    background: #f1f5f9;
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.form-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.form-card h3 {
+    margin-bottom: 8px;
+}
+
+.form-card > p {
+    color: var(--gray);
+
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+
+    margin: 15px 0 7px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d6dbe3;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--blue);
+}
+
+textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+
+    margin-top: 20px;
+
+    background: var(--dark-blue);
+
+    color: white;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+    background: white;
+}
+
+.testimonial-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.testimonial {
+    padding: 30px;
+
+    background: #f8fafc;
+
+    border-radius: 16px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.person {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+.avatar {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    background: var(--dark-blue);
+
+    color: white;
+
+    font-size: 24px;
+}
+
+.stars {
+    color: #e0a500;
+
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    color: #475467;
+
+    font-style: italic;
+}
+
+.placeholder {
+    color: #98a2b3;
+
+    font-size: 12px;
+
+    margin-top: 12px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.90)
+        ),
+        url("1000009886.jpg")
+        center center / cover no-repeat;
+
+    color: white;
+
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+
+    margin: auto auto 30px;
+
+    color: #dce5f4;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #050505;
+
+    color: white;
+
+    padding: 55px 20px 25px;
+
+    border-top: 1px solid
+        rgba(212, 160, 23, 0.4);
+}
+
+.footer-grid {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+.footer-logo {
+    width: 170px;
+
+    height: auto;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--gold);
+
+    margin-bottom: 15px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+
+    color: var(--gold-light);
+}
+
+footer p,
+footer a {
+    color: #aeb9ca;
+}
+
+footer a {
+    display: block;
+
+    text-decoration: none;
+
+    margin: 8px 0;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.copyright {
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #272727;
+
+    color: #8793a8;
+
+    font-size: 13px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        left: 0;
+        right: 0;
+
+        top: 76px;
+
+        background: #050505;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        border-bottom: 1px solid var(--gold);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .service-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .country-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    section {
+        padding: 65px 15px;
+    }
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .country-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 25px 18px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 45px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header>
+
+<div class="navbar">
+
+    <div class="logo-area">
+
+        <!-- YOUR UPLOADED COMPANY IMAGE -->
+
+        <img
+            src="1000009886.jpg"
+            class="logo"
+            alt="Divine God Ventures Limited Logo">
+
+        <div class="logo-text">
+            Divine God <span>Ventures Ltd</span>
+        </div>
+
+    </div>
+
+    <div
+        class="menu-btn"
+        onclick="toggleMenu()">
+
+        ☰
+
+    </div>
+
+    <nav id="nav">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#services">
+            Services
+        </a>
+
+        <a href="#visa">
+            Visa
+        </a>
+
+        <a href="#flights">
+            Flights
+        </a>
+
+        <a href="#testimonials">
+            Testimonials
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+    class="hero"
+    id="home">
+
+    <div class="hero-content">
+
+        <span class="badge">
+            ✈️ TRAVEL • VISA • FLIGHT SERVICES
+        </span>
+
+        <h1>
+            Your Journey Starts
+            <span>Here.</span>
+        </h1>
+
+        <p>
+            Divine God Ventures Limited provides
+            travel consultation, visa application
+            assistance and flight booking support
+            for your international journey.
+        </p>
+
+        <div class="buttons">
+
+            <a
+                class="btn btn-primary"
+                href="#visa">
+
+                🇪🇺 Apply For Visa
+
+            </a>
+
+            <a
+                class="btn btn-whatsapp"
+                href="https://wa.me/2349029246887"
+                target="_blank">
+
+                💬 Contact Agent
+
+            </a>
+
+            <a
+                class="btn btn-dark"
+                href="#flights">
+
+                ✈️ Book A Flight
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section
+    class="services"
+    id="services">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <small>
+            Our Services
+        </small>
+
+        <h2>
+            Travel Services
+        </h2>
+
+        <p>
+            Professional support for travelers
+            planning international trips.
+        </p>
+
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🇪🇺
+            </div>
+
+            <h3>
+                European Visa Assistance
+            </h3>
+
+            <p>
+                Assistance with visa preparation,
+                document checklists and appointment
+                guidance.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                ✈️
+            </div>
+
+            <h3>
+                Flight Booking
+            </h3>
+
+            <p>
+                Tell our agent your destination
+                and travel dates for flight options
+                and booking assistance.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                👨‍💼
+            </div>
+
+            <h3>
+                Travel Consultation
+            </h3>
+
+            <p>
+                Speak directly with our agent
+                about your travel plans and
+                requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EUROPEAN COUNTRIES
+========================= -->
+
+<section class="countries">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <small>
+            Europe
+        </small>
+
+        <h2>
+            Visa Destinations
+        </h2>
+
+        <p>
+            Choose your destination and begin
+            your consultation.
+        </p>
+
+    </div>
+
+
+    <div class="country-grid">
+
+        <div class="country">
+            🇫🇷 France
+        </div>
+
+        <div class="country">
+            🇩🇪 Germany
+        </div>
+
+        <div class="country">
+            🇮🇹 Italy
+        </div>
+
+        <div class="country">
+            🇪🇸 Spain
+        </div>
+
+        <div class="country">
+            🇳🇱 Netherlands
+        </div>
+
+        <div class="country">
+            🇧🇪 Belgium
+        </div>
+
+        <div class="country">
+            🇵🇹 Portugal
+        </div>
+
+        <div class="country">
+            🇬🇷 Greece
+        </div>
+
+        <div class="country">
+            🇦🇹 Austria
+        </div>
+
+        <div class="country">
+            🇨🇭 Switzerland
+        </div>
+
+        <div class="country">
+            🇸🇪 Sweden
+        </div>
+
+        <div class="country">
+            🇩🇰 Denmark
+        </div>
+
+        <div class="country">
+            🇫🇮 Finland
+        </div>
+
+        <div class="country">
+            🇳🇴 Norway
+        </div>
+
+        <div class="country">
+            🇮🇸 Iceland
+        </div>
+
+        <div class="country">
+            🇭🇺 Hungary
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     VISA PROCESS
+========================= -->
+
+<section id="visa">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <small>
+            How It Works
+        </small>
+
+        <h2>
+            Visa Assistance Process
+        </h2>
+
+        <p>
+            Follow the basic steps to begin
+            your application assistance.
+        </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process">
+
+            <div class="number">
+                1
+            </div>
+
+            <h3>
+                Consultation
+            </h3>
+
+            <p>
+                Tell our agent your destination,
+                purpose of travel and intended dates.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div class="number">
+                2
+            </div>
+
+            <h3>
+                Document Review
+            </h3>
+
+            <p>
+                Receive guidance on the documents
+                relevant to your application.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div class="number">
+                3
+            </div>
+
+            <h3>
+                Application
+            </h3>
+
+            <p>
+                Complete the applicable official
+                application process and biometrics
+                where required.
+            </p>
+
+        </div>
+
+
+        <div class="process">
+
+            <div class="number">
+                4
+            </div>
+
+            <h3>
+                Decision
+            </h3>
+
+            <p>
+                The relevant embassy or consulate
+                makes the final visa decision.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="notice">
+
+        <strong>
+            Important:
+        </strong>
+
+        Visa approval is determined by the
+        relevant immigration authority or
+        consulate. Divine God Ventures Limited
+        provides assistance and does not
+        guarantee visa approval.
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FORMS
+========================= -->
+
+<section class="forms">
+
+<div class="container">
+
+    <div class="section-title">
+
+        <small>
+            Start Your Journey
+        </small>
+
+        <h2>
+            Request Assistance
+        </h2>
+
+        <p>
+            Submit your request and contact
+            our agent through WhatsApp.
+        </p>
+
+    </div>
+
+
+    <div class="form-grid">
+
+
+        <!-- VISA FORM -->
+
+        <div class="form-card">
+
+            <h3>
+                🇪🇺 Visa Consultation
+            </h3>
+
+            <p>
+                Request assistance with your
+                European visa process.
+            </p>
+
+
+            <form
+                onsubmit="sendVisaRequest(event)">
+
+
+                <label>
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="visaName"
+                    required
+                    placeholder="Enter your full name">
+
+
+                <label>
+                    Phone / WhatsApp
+                </label>
+
+                <input
+                    type="tel"
+                    id="visaPhone"
+                    required
+                    placeholder="+234...">
+
+
+                <label>
+                    Destination
+                </label>
+
+                <select
+                    id="visaCountry"
+                    required>
+
+                    <option value="">
+                        Select destination
+                    </option>
+
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Italy</option>
+                    <option>Spain</option>
+                    <option>Netherlands</option>
+                    <option>Belgium</option>
+                    <option>Portugal</option>
+                    <option>Greece</option>
+                    <option>Austria</option>
+                    <option>Switzerland</option>
+                    <option>Sweden</option>
+                    <option>Denmark</option>
+                    <option>Finland</option>
+                    <option>Norway</option>
+                    <option>Iceland</option>
+                    <option>Hungary</option>
+
+                </select>
+
+
+                <label>
+                  Purpose of Travel
+               </label>
+
+           <select
+    id="visaPurpose"
+    required>
+
+    <option value="">
+        Select purpose
+    </option>
+
+    <option>
+        Tourism
+    </option>
+
+    <option>
+        Business
+    </option>
+
+    <option>
+        Study
+    </option>
+
+    <option>
+        Family Visit
+    </option>
+
+    <option>
+        Medical
+    </option>
+
+    <option>
+        Other
+    </option>
+
+</select>
+
+
+<label>
+Message
+</label>
+
+<textarea
+    id="visaMessage"
+    placeholder="Tell us about your travel plans">
+</textarea>
+
+
+<button
+    class="btn submit-btn"
+    type="submit">
+
+    Send Visa Request
+
+</button>
+
+</form>
+
+</div>
+
+
+<!-- =========================
+     FLIGHT BOOKING FORM
+========================= -->
+
+<div
+    class="form-card"
+    id="flights">
+
+    <h3>
+        ✈️ Flight Booking Request
+    </h3>
+
+    <p>
+        Tell us where you want to travel
+        and we will contact you about
+        available flight options.
+    </p>
+
+
+    <form
+        onsubmit="sendFlightRequest(event)">
+
+        <label>
+            Full Name
+        </label>
+
+        <input
+            type="text"
+            id="flightName"
+            required
+            placeholder="Enter your full name">
+
+
+        <label>
+            Phone / WhatsApp
+        </label>
+
+        <input
+            type="tel"
+            id="flightPhone"
+            required
+            placeholder="+234...">
+
+
+        <label>
+            Departure City
+        </label>
+
+        <input
+            type="text"
+            id="flightFrom"
+            required
+            placeholder="Lagos, Nigeria">
+
+
+        <label>
+            Destination
+        </label>
+
+        <input
+            type="text"
+            id="flightTo"
+            required
+            placeholder="Paris, France">
+
+
+        <label>
+            Departure Date
+        </label>
+
+        <input
+            type="date"
+            id="departure"
+            required>
+
+
+        <label>
+            Return Date
+        </label>
+
+        <input
+            type="date"
+            id="returnDate">
+
+
+        <label>
+            Number of Passengers
+        </label>
+
+        <select id="passengers">
+
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+
+        </select>
+
+
+        <button
+            class="btn submit-btn"
+            type="submit">
+
+            Request Flight Options
+
+        </button>
+
+    </form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TESTIMONIALS
+========================= -->
+
+<!-- =========================
+     TESTIMONIALS
+========================= -->
+
+<section
+    class="testimonials"
+    id="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <small>
+                Client Testimonials
+            </small>
+
+            <h2>
+                What Our Clients Say
+            </h2>
+
+            <p>
+                Hear from clients who have shared their
+                experiences with Divine God Ventures.
+            </p>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+            <!-- FIRST TESTIMONIAL -->
+
+            <div class="testimonial">
+
+                <img
+                    src="1000009917.jpg"
+                    alt="Client visa testimonial"
+                    style="
+                        width:100%;
+                        height:280px;
+                        object-fit:cover;
+                        border-radius:12px;
+                        margin-bottom:20px;
+                    ">
+
+                <div class="person">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Happy Client
+                        </strong>
+
+                        <br>
+
+                        <small>
+                            Visa Client
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "THANK YOU DIVINE GOD VENTURES
+                    FOR SUCCESSFUL VISA APPROVAL."
+                </p>
+
+            </div>
+
+
+            <!-- SECOND TESTIMONIAL -->
+
+            <div class="testimonial">
+
+                <img
+                    src="1000009920.jpg"
+                    alt="Client visa testimonial"
+                    style="
+                        width:100%;
+                        height:280px;
+                        object-fit:cover;
+                        border-radius:12px;
+                        margin-bottom:20px;
+                    ">
+
+                <div class="person">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Satisfied Client
+                        </strong>
+
+                        <br>
+
+                        <small>
+                            Travel Client
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "DIVINE GOD VENTURES IS REAL
+                    AND TRUSTED."
+                </p>
+
+            </div>
+
+
+            <!-- THIRD TESTIMONIAL -->
+
+            <div class="testimonial">
+
+                <img
+                    src="1000009910.jpg"
+                    alt="Client visa testimonial"
+                    style="
+                        width:100%;
+                        height:280px;
+                        object-fit:cover;
+                        border-radius:12px;
+                        margin-bottom:20px;
+                    ">
+
+                <div class="person">
+
+                    <div class="avatar">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Happy Family
+                        </strong>
+
+                        <br>
+
+                        <small>
+                            Travel Client
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "DIVINE GOD VENTURES MADE ME
+                    AND MY FAMILY HAPPY."
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+    <h2>
+        Ready To Start Your Journey?
+    </h2>
+
+    <p>
+        Contact Divine God Ventures Limited
+        for visa consultation, travel assistance
+        or flight booking.
+    </p>
+
+
+    <div
+        class="buttons"
+        style="justify-content:center">
+
+
+        <a
+            class="btn btn-whatsapp"
+            href="https://wa.me/2349029246887"
+            target="_blank">
+
+            💬 WhatsApp Agent
+
+        </a>
+
+
+        <a
+            class="btn btn-primary"
+            href="mailto:divinegodventuresltd@gmail.com">
+
+            📧 Email Support
+
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer id="contact">
+
+<div class="footer-grid">
+
+
+    <div>
+
+        <img
+            src="1000009886.jpg"
+            class="footer-logo"
+            alt="Divine God Ventures Limited">
+
+        <h3>
+            Divine God Ventures Ltd
+        </h3>
+
+        <p>
+            Travel consultation, visa assistance
+            and flight booking services.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Contact Agent
+        </h3>
+
+        <a href="tel:+2349029246887">
+
+            📞 +234 902 924 6887
+
+        </a>
+
+        <a
+            href="https://wa.me/2349029246887"
+            target="_blank">
+
+            💬 WhatsApp Agent
+
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h3>
+            Customer Support
+        </h3>
+
+        <a
+            href="mailto:divinegodventuresltd@gmail.com">
+
+            📧 divinegodventuresltd@gmail.com
+
+        </a>
+
+        <a
+            href="tel:+2349076642926">
+
+            🛠️ Web Maintenance:
+            +234 907 664 2926
+
+        </a>
+
+    </div>
+
+
+</div>
+
+
+<div class="copyright">
+
+    © <span id="year"></span>
+    Divine God Ventures Ltd.
+    All rights reserved.
+
+    <br><br>
+
+    Visa decisions are made by the
+    relevant immigration authorities.
+
+</div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu() {
+
+    document
+        .getElementById("nav")
+        .classList
+        .toggle("active");
+
+}
+
+
+/* VISA REQUEST */
+
+function sendVisaRequest(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("visaName").value;
+
+    const phone =
+        document.getElementById("visaPhone").value;
+
+    const country =
+        document.getElementById("visaCountry").value;
+
+    const purpose =
+        document.getElementById("visaPurpose").value;
+
+    const message =
+        document.getElementById("visaMessage").value;
+
+
+    const text =
+`Hello Divine God Ventures Ltd,
+
+I would like visa consultation.
+
+Name: ${name}
+Phone: ${phone}
+Destination: ${country}
+Purpose: ${purpose}
+Message: ${message}`;
+
+
+    const whatsapp =
+        "https://wa.me/2349029246887?text="
+        + encodeURIComponent(text);
+
+
+    window.open(
+        whatsapp,
+        "_blank"
+    );
+
+}
+
+
+/* FLIGHT REQUEST */
+
+function sendFlightRequest(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("flightName").value;
+
+    const phone =
+        document.getElementById("flightPhone").value;
+
+    const from =
+        document.getElementById("flightFrom").value;
+
+    const to =
+        document.getElementById("flightTo").value;
+
+    const departure =
+        document.getElementById("departure").value;
+
+    const returnDate =
+        document.getElementById("returnDate").value;
+
+    const passengers =
+        document.getElementById("passengers").value;
+
+
+    const text =
+`Hello Divine God Ventures Ltd,
+
+I would like flight booking assistance.
+
+Name: ${name}
+Phone: ${phone}
+From: ${from}
+Destination: ${to}
+Departure: ${departure}
+Return: ${returnDate || "One way"}
+Passengers: ${passengers}`;
+
+
+    const whatsapp =
+        "https://wa.me/2349029246887?text="
+        + encodeURIComponent(text);
+
+
+    window.open(
+        whatsapp,
+        "_blank"
+    );
+
+}
+
+
+/* CURRENT YEAR */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+
+</html>
+  
